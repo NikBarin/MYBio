@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои соцсети</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .title {
+      color: white;
+      margin-bottom: 40px;
+      font-size: 28px;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .link-card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: white;
+      text-decoration: none;
+    }
+
+    .link-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon {
+      font-size: 24px;
+    }
+
+    .link-text {
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px;
+      }
+      .title {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <!-- Иконки через Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Мои соцсети</h1>
+    <div class="social-links">
+      <!-- Пример ссылок — замените # на свои URL -->
+      <a href="https://www.twitch.tv/misstfix" class="link-card">
+        <i class="fab fa-twitch icon"></i>
+        <span class="link-text">Twitch</span>
+      </a>
+      <a href="https://t.me/+BFOHv62Bhek3MDMy" class="link-card">
+        <i class="fab fa-telegram icon"></i>
+        <span class="link-text">Тг группа</span>
+      </a>
+      <a href="#" class="link-card">
+        <i class="fab fa-discord icon"></i>
+        <span class="link-text">МОЙ ДС: petrovich66</span>
+      </a>
+ 
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+
