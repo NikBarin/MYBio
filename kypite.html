@@ -3,90 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин оптики "Зрение Онлайн"</title>
-    
-    <style>
-        /* Общие стили */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #f5f5f5;
-            padding: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-    </style>
+    <title>Зрение Онлайн - Ваш путь к четкому зрению</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#catalog">Каталог</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">Зрение Онлайн</a>
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Добро пожаловать в магазин оптики</h1>
-            <p>Ваш путь к идеальному зрению</p>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Откройте мир четкого зрения</h1>
+            <p>Профессиональная оптика и консультации</p>
+            <a href="#catalog" class="btn">Перейти в каталог</a>
+        </div>
+    </section>
 
-        <section id="catalog">
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
             <h2>Наш каталог</h2>
             <div class="product-grid">
-                <!-- Здесь будут товары -->
+                <!-- Товары будут добавлены здесь -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <ul>
-                <li>Подбор очков</li>
-                <li>Консультация офтальмолога</li>
-                <li>Доставка</li>
-            </ul>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Зрение Онлайн</p>
+        <div class="container">
+            <p>© 2025 Зрение Онлайн</p>
+        </div>
     </footer>
-
-    <!-- JavaScript для корзины -->
-    <script>
-        let cart = [];
-
-        function addToCart(product) {
-            cart.push(product);
-            console.log('Товар добавлен в корзину:', product);
-        }
-
-        function showCart() {
-            console.log('Содержимое корзины:', cart);
-        }
-    </script>
 </body>
 </html>
